@@ -164,9 +164,29 @@ export const initialProfile = {
 export const initialProjects: Project[] = [
   {
     id: "proj-1",
+    name: "Logistics One",
+    description: "A comprehensive end-to-end logistics management platform that streamlines supply chain operations, real-time fleet tracking, order processing, and warehouse management across distributed delivery networks.",
+    coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHplr6SUW2mfxn9HVDhbQLZ9SwH96lGF_KUIdA3XINMQ&s=10",
+    techStack: ["React", "Node.js", "Express.js", "MongoDB", "Leaflet Maps", "Redux Toolkit", "Socket.io"],
+    features: [
+      "Real-time fleet GPS tracking with interactive Leaflet map overlays.",
+      "Automated route optimization using Dijkstra's algorithm to minimize delivery costs.",
+      "Order lifecycle management from dispatch to delivery confirmation.",
+      "Live driver telemetry dashboard with fuel and load analytics."
+    ],
+    challenges: "Handling thousands of concurrent GPS coordinate updates in real-time without stalling the UI thread or causing memory leaks.",
+    learnings: "Mastered web workers for CPU-intensive routing calculations, efficient MongoDB geospatial indexes, and canvas overlay rendering on map tiles.",
+    githubLink: "https://github.com/subhankar/logistics-one",
+    liveDemo: "https://logistics-one.vercel.app",
+    status: "Completed",
+    timeline: "Oct 2025 - Dec 2025",
+    futureImprovements: ["ML-based delivery time prediction", "Driver mobile app integration via React Native"]
+  },
+  {
+    id: "proj-2",
     name: "AI Interview Preparation Platform",
     description: "An advanced, interactive SaaS application that uses large language models to conduct live audio/video interview simulations, evaluating candidate responses, facial expressions, and body language to provide deep diagnostic feedback.",
-    coverImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800&auto=format&fit=crop",
+    coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3tXiZPF4pv5T0PAFwB8LQtZEblHe8su8XfElohSBnrg&s=10",
     techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Gemini API", "WebRTC", "MongoDB", "Framer Motion"],
     features: [
       "Real-time audio-to-text transcript analysis.",
@@ -184,60 +204,68 @@ export const initialProjects: Project[] = [
     futureImprovements: ["Integrating live peer-to-peer mock rooms", "Expanding to 3D avatar interviewers using React Three Fiber"]
   },
   {
-    id: "proj-2",
-    name: "Logistics Management Platform",
-    description: "A highly optimized dashboard for tracking, routing, and allocating logistics assets across global supply lines, utilizing interactive graphs, custom maps, and automated route optimizations.",
-    coverImage: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop",
-    techStack: ["React", "Express.js", "MongoDB", "Leaflet Maps", "Recharts", "Redux Toolkit"],
+    id: "proj-3",
+    name: "Spotify Clone",
+    description: "A pixel-perfect, feature-rich music streaming web app inspired by Spotify, featuring dynamic playlists, real-time audio playback, artist pages, search, and personalized recommendation engines.",
+    coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6_f8eFpH9UmkGvaHn8lofYfJ5kgxVBVYz0gCrsshnwA&s=10",
+    techStack: ["React", "Node.js", "Express.js", "MongoDB", "Web Audio API", "Tailwind CSS", "Framer Motion"],
     features: [
-      "Dynamic pathfinding using customized A* algorithm.",
-      "Real-time GPS coordinate simulations and truck telemetry.",
-      "Auto-scheduling dispatch engine minimizing idle runs by 23%."
+      "Audio streaming with custom Web Audio API visualizer and waveform render.",
+      "Dynamic playlist creation, editing, and real-time collaborative sharing.",
+      "Artist & album discovery with genre-based recommendation engine.",
+      "Cross-device progress sync and offline-mode PWA support."
     ],
-    challenges: "Rendering thousands of active nodes and routes on map interfaces without causing UI thread stutter on low-power devices.",
-    learnings: "Mastered canvas overlay layers on maps, web workers for resource-intensive path calculations, and MongoDB geospatial query optimization.",
-    githubLink: "https://github.com/subhankar/logistics-platform",
-    liveDemo: "https://logistics-dashboard.vercel.app",
+    challenges: "Achieving seamless audio crossfade transitions and efficient streaming buffer management across variable network conditions.",
+    learnings: "Gained deep experience with the Web Audio API, audio context graph nodes, streaming chunk buffers, and MediaSession API for OS-level media controls.",
+    githubLink: "https://github.com/subhankar/spotify-clone",
+    liveDemo: "https://spotify-clone-subhankar.vercel.app",
     status: "Completed",
-    timeline: "Oct 2025 - Dec 2025"
+    timeline: "Aug 2025 - Oct 2025",
+    futureImprovements: ["Podcast streaming support", "AI-generated DJ mood playlists based on user listening history"]
   },
   {
-    id: "proj-3",
+    id: "proj-4",
+    name: "Campus Kart",
+    description: "A hyperlocal e-commerce marketplace built exclusively for college students, enabling peer-to-peer buying and selling of textbooks, electronics, stationery, and other campus essentials within the campus community.",
+    coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdy8Uqr_fnVxEHhsikFyVtYSjSpdnM7turut7gRYuoIg&s=10",
+    techStack: ["Next.js", "TypeScript", "MongoDB", "Stripe", "Cloudinary", "Tailwind CSS", "NextAuth.js"],
+    features: [
+      "Student-verified listings with college email authentication.",
+      "Real-time in-app chat between buyers and sellers using Socket.io.",
+      "Stripe-integrated secure payment gateway with escrow system.",
+      "AI-powered price suggestion based on product condition and market data."
+    ],
+    challenges: "Building a trustworthy transaction escrow system and ensuring data isolation between college communities using multi-tenant architecture.",
+    learnings: "Mastered multi-tenant database design patterns, payment webhook handling with Stripe, and Cloudinary image upload optimization pipelines.",
+    githubLink: "https://github.com/subhankar/campus-kart",
+    liveDemo: "https://campus-kart.vercel.app",
+    status: "In Progress",
+    timeline: "Mar 2026 - Present",
+    futureImprovements: ["Mobile app via Expo React Native", "Smart contract escrow using Ethereum", "Campus delivery network for logistics"]
+  },
+  {
+    id: "proj-5",
     name: "Battlefield IoT Security System",
     description: "A robust hardware-software telemetry hub designed for tactical edge networking, collecting real-time soldier biometrics, environment toxicity levels, and tactical mapping using encrypted RF mesh protocols.",
-    coverImage: "https://images.unsplash.com/photo-1508962914676-134849a727f0?q=80&w=800&auto=format&fit=crop",
+    coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqhrvG9QBAdClvj7c8T87nGPQusfMOIhyvIZcOEXKE9g&s=10",
     techStack: ["ESP32", "C++", "MQTT", "Node.js", "React", "Tailwind CSS", "AES-256"],
     features: [
       "Biometric tracking (Heart rate, SpO2, Accelerometer fall detection).",
       "Off-grid communication using LoRa mesh networking nodes.",
-      "Encrypted base station dashboard showing alerts on topological layouts."
+      "Encrypted base station dashboard showing alerts on topological layouts.",
+      "Toxicity & environmental sensors (CO2, temperature, humidity) with threshold alarms."
     ],
     challenges: "Operating inside harsh, low-bandwidth, and high-noise environments where traditional WiFi or cellular signals are non-existent.",
     learnings: "Gained significant hardware design, battery optimization, serial communication, and low-level firmware encryption skills.",
     githubLink: "https://github.com/subhankar/battlefield-iot",
     liveDemo: "https://tactical-iot.vercel.app",
     status: "In Progress",
-    timeline: "Feb 2026 - Present"
-  },
-  {
-    id: "proj-4",
-    name: "Netflix Clone WebApp",
-    description: "A high-fidelity clone of the Netflix interface, complete with movie categorization, trailers, custom user lists, and sleek video player overlays.",
-    coverImage: "https://images.unsplash.com/photo-1574375927938-d5a98e8edd85?q=80&w=800&auto=format&fit=crop",
-    techStack: ["React", "Firebase Auth", "TMDB API", "Tailwind CSS", "Framer Motion"],
-    features: [
-      "Dynamic TMDB category fetches.",
-      "Trailer popups using YouTube embedded SDK.",
-      "User list synchronization via Firebase Firestore."
-    ],
-    challenges: "Optimizing initial page loading speeds and image assets fetching from TMDB.",
-    learnings: "Implementing image lazy loading, pre-fetching hover cards, and caching raw API responses.",
-    githubLink: "https://github.com/subhankar/netflix-clone",
-    liveDemo: "https://netflix-custom.vercel.app",
-    status: "Completed",
-    timeline: "Aug 2025 - Sep 2025"
+    timeline: "Feb 2026 - Present",
+    architectureDiagram: "ESP32 Nodes (LoRa Mesh) --> MQTT Broker --> Node.js Gateway --> React Dashboard (AES-256 Encrypted)",
+    futureImprovements: ["Satellite uplink integration for truly off-grid comms", "AI anomaly detection for biometric threat alerts"]
   }
 ];
+
 
 export const initialSkills: Skill[] = [
   // Frontend
