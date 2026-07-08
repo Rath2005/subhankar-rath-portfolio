@@ -109,7 +109,7 @@ export const initialProfile = {
   socials: {
     instagram: "https://www.instagram.com/",
     linkedin: "https://www.linkedin.com/in/subhankar-rath-2a60b340a/",
-    github: "https://github.com/",
+    github: "https://github.com/dashboard",
     email: "subhankarrath.ece@gmail.com",
     whatsapp: "https://wa.me/1234567890",
     twitter: "https://twitter.com/subhankar"
